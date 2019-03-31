@@ -12,7 +12,7 @@ const isDev = process.env.NODE_ENV === 'development'
 const app = fa({
   storageDirectory: path.resolve(datadir),
   memory: isDev,
-  origin: isDev ? '*' : 'https://analytics.benwiley.org',
+  origin: isDev ? '*' : 'https://benwiley.org',
   endpointsOrigin: '*'
 })
 const { feed } = app
