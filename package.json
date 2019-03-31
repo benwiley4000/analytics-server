@@ -7,7 +7,7 @@
     "test": "test"
   },
   "dependencies": {
-    "fair-analytics": "^1.2.2",
+    "fair-analytics": "benwiley4000/fair-analytics#endpoints-origin",
     "mkdirp": "^0.5.1"
   },
   "devDependencies": {

@@ -7,9 +7,13 @@ const port = process.env.PORT || 6978
 
 mkdirp.sync(datadir)
 
+const isDev = process.env.NODE_ENV === 'development'
+
 const app = fa({
   storageDirectory: path.resolve(datadir),
-  memory: (process.env.NODE_ENV === 'development')
+  memory: isDev,
+  origin: isDev ? '*' : 'https://analytics.benwiley.org',
+  endpointsOrigin: '*'
 })
 const { feed } = app
 
