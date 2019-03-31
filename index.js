@@ -1,5 +1,5 @@
 const path = require('path')
-const fa = require('fair-analytics')
+const fa = require('@benwiley4000/fair-analytics')
 const mkdirp = require('mkdirp')
 
 const datadir = process.env.DATADIR || path.join(__dirname, 'data')
